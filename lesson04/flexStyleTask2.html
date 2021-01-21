@@ -29,7 +29,7 @@
         .bodyFlex {
             width: 100%;
             height: 780px;
-            background: snow;
+            background: #e8e8e8;
             align-items: flex-end;
         }
 
@@ -37,7 +37,7 @@
             display: flex;
             width: 100%;
             height: 80%;
-            background: #ffffff;
+            background: #e8e8e8;
             margin: 5px 0px 5px 0px;
             flex-direction: row;
             justify-content: space-between;
@@ -56,9 +56,8 @@
 
         .rightSectionTop {
             width: 90%;
-            height: 10%;
-            background: yellow;
-            margin-bottom: 5px;
+            height: 5%;
+            background: #f4eded;
         }
 
         .rightSectionCenter {
@@ -76,46 +75,41 @@
             width: 90%;
             height: 30%;
             background: lightskyblue;
-            margin-right: 5px;
         }
 
         .rightSectionFooter {
             width: 90%;
-            height: 10%;
+            height: 5%;
             background: darkgray;
-            margin-top: 10px;
         }
 
         .topBodyLeftSide {
-            width: 30%;
+            width: 33%;
             height: 100%;
             display: flex;
             flex-direction: column;
             background: #db7d7d;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
         }
 
         .headerLeft {
-            width: 20%;
-            height: 20%;
+            width: 90%;
+            height: 10%;
             background: yellow;
-            margin-bottom: 5px;
         }
 
         .navLeft {
-            width: 20%;
-            height: 20%;
+            width: 90%;
+            height: 70%;
             background: lightskyblue;
-            margin-right: 5px;
         }
 
         .footerLeft {
-            width: 20%;
-            height: 20%;
+            width: 90%;
+            height: 10%;
             background: darkgray;
-            margin-top: 10px;
         }
 
         .footerFlex {
@@ -126,34 +120,89 @@
         }
 
         .rightInnerHeader {
-            width: 100px;
-            height: 50px;
-            background: white;
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
         }
 
         .rightInnerP1 {
-            width: 100px;
-            height: 50px;
-            background: blanchedalmond;
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
         }
 
         .rightInnerP2 {
-            width: 100px;
-            height: 50px;
-            background: yellowgreen;
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
         }
 
         .rightInnerFooter {
-            width: 100px;
-            height: 50px;
-            background: rosybrown;
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
         }
-        .article1{
+
+        .article1 {
             display: flex;
+            width: 100%;
+            height: 100%;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
 
+        }
+
+        .rightSectionSecond {
+            display: flex;
+            width: 90%;
+            height: 40%;
+
+        }
+
+        .article2 {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .rightSecondInnerHeader {
+            width: 90%;
+            height: 10%;
+            background: #f4eded;
+        }
+
+        .rightBlock {
+            display: flex;
+            width: 90%;
+            height: 70%;
+            background: lightskyblue;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rightSecondInnerFooter {
+            width: 90%;
+            height: 10%;
+            background: #f4eded;
+        }
+
+        .rightSecondBlockP {
+            display: flex;
+            width: 65%;
+            height: 100%;
+            background: #f4eded;
+        }
+
+        .aside {
+            display: flex;
+            width: 32%;
+            height: 100%;
+            background: #f4eded;
         }
 
 
@@ -173,18 +222,36 @@
                 <div class="rightSectionTop">RightHeader</div>
                 <div class="rightSectionCenter">
                     <div class="article1">
-                    <div class="rightInnerHeader">rightInnerHeader</div>
-                    <div class="rightInnerP1">rightInnerP1</div>
-                    <div class="rightInnerP2">rightInnerP2</div>
-                    <div class="rightInnerFooter">rightInnerFooter</div>
+                        <div class="rightInnerHeader">rightInnerHeader</div>
+                        <div class="rightInnerP1">rightInnerP1</div>
+                        <div class="rightInnerP2">rightInnerP2</div>
+                        <div class="rightInnerFooter">rightInnerFooter</div>
                     </div>
                 </div>
-                <div class="rightSectionSecond">Article2</div>
+                <div class="rightSectionSecond">
+                    <div class="article2">
+                        <div class="rightSecondInnerHeader">rightSecondInnerHeader</div>
+
+                        <div class="rightBlock">
+                            <div class="rightSecondBlockP"></div>
+                            <div class="aside"></div>
+                        </div>
+
+                        <div class="rightSecondInnerFooter">rightSecondInnerFooter</div>
+                    </div>
+                </div>
                 <div class="rightSectionFooter">RightSectionFooter</div>
             </div>
         </div>
         <div class="footerFlex">Footer</div>
     </div>
+</div>
+<!--    -->
+<!--    flex-direction: row-reverse;-->
+<!--    justify-content:center;-->
+<!--    align-items:flex-end;-->
+<!--    flex-direction: column-reverse;-->
+<!--    flex-wrap: wrap;-->
 
 </div>
 </body>
