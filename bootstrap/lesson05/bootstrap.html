@@ -9,25 +9,18 @@
 
         .container-fluid {
             height: 100%;
-            background: #020202;
+            background: #f8f9fa;
             min-height: 100%;
         }
 
         .header-top {
             height: 75px;
-            background: gainsboro;
+            background: #f8f9fa;
         }
 
         .under-header {
             height: 250px;
             background: navy;
-        }
-
-        .content-block {
-            height: 1000px;
-            background: gainsboro;
-            justify-content: center;
-            align-items: center
         }
 
         .footer {
@@ -37,17 +30,17 @@
 
         .content-block-1 {
             height: 800px;
-            background: yellow;
+            background: #f8f9fa;
         }
 
         .content-block-2 {
             height: 800px;
-            background: #4e4e05;
+            background: #f8f9fa;
         }
 
         .content-block-3 {
             height: 800px;
-            background: #fa1414;
+            background: #f8f9fa;
         }
 
         .content-block-3 {
@@ -65,12 +58,12 @@
         <div class="header-top w-100">
             <div class="pos-f-t">
                 <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
+                    <div class="bg-white p-4">
                         <h4 class="text-white">Collapsed content</h4>
                         <span class="text-muted">Toggleable via the navbar brand.</span>
                     </div>
                 </div>
-                <nav class="navbar navbar-dark bg-dark flex-row-reverse">
+                <nav class="navbar navbar-light bg-light flex-row-reverse">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -233,9 +226,9 @@
 </div>
 </div>
 
-<div class="row">
+<div class="row justify-content-around">
     <div class="content-block-3 w-100 d-flex justify-content-center align-items-center flex-column justify-content-around">
-        <div class="row align-items-center">
+        <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -265,17 +258,19 @@
             </div>
         </div>
 
-        <div class="row align-items-center">
-            <div class="media ">
+        <div class="d-flex justify-content-center align-items-center justify-content-around" style="width: 900px; height: 500px;">
+            <div class="media">
                 <img class="rounded-circle"
                      src="https://i.pinimg.com/originals/25/58/79/255879d58b404a27c5d19a46e4601954.jpg"
                      alt="Circle image" width="100px" height="100px">
+                </div>
+            <div>
                 <div class="media-body">
-                    <h5 class="mt-0">Media heading</h5>
+                    <h5 class="mt-0"> Media heading</h5>
                     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
                     purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-                    vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
+                    vulputate fringilla. Donec lacinia congue felis in faucibus.</div>
+            </div>
             </div>
         </div>
 
