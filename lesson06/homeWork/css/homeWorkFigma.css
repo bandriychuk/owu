@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display, sans-serif;
+}
+
+.body-content {
+    width: 1440px;
+    height: 1561px;
+    background-color: #FFFFFF;
+}
+
+.menu-header {
+    position: absolute;
+    width: 1440px;
+    height: 66px;
+    background: #FFFFFF 95%;
+}
+
+
+.under-header-line {
+    position: absolute;
+    top: 66px;
+    width: 1440px;
+    border: 1px solid #e30909;
+}
+
+.menu-frame-6 {
+    display: flex;
+    height: 28px;
+    width: 1440px;
+    left: 0px;
+    top: 14px;
+    border-radius: 0px;
+    position: absolute;
+    right: 0%;
+    bottom: 36.36%;
+}
+
+.icon-web {
+    display: flex;
+    height: 24.83333396911621px;
+    width: 114.33424377441406px;
+    left: 1124.665771484375px;
+    top: 20px;
+    border-radius: 0px;
+    position: absolute;
+    right: 13.96%;
+    bottom: 31.52%;
+    column-gap: 24px;
+}
+
+.header-nav-text {
+    display: flex;
+    height: 18.43603515625px;
+    width: 400px;
+    left: 204.5px;
+    top: 9.56396484375px;
+    position: absolute;
+    right: 58.02%;
+    bottom: 0%;
+    column-gap: 34px;
+}
+
+.content-slider {
+    height: 671px;
+    width: 1445px;
+    left: -5px;
+    top: 67px;
+    position: absolute;
+}
+
+.photo-slider {
+    display: flex;
+    position: absolute;
+    height: 35px;
+    width: 253px;
+    left: 594px;
+    top: 720px;
+    border-radius: 20px;
+    margin-bottom: -5px;
+    column-gap: 15px;
+    /*background-color: #329BF2;*/
+}
+
+
+.content-center-places {
+    position: absolute;
+    height: 48px;
+    width: 425px;
+    left: 506px;
+    top: 829px;
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+
+.marrakesh {
+    height: 493px;
+    width: 342px;
+    left: 97px;
+    top: 918px;
+    border-radius: 0px;
+    position: absolute;
+}
+
+.marrakesh h3 {
+    text-align: center;
+    height: 28px;
+    width: 285px;
+    left: 48px;
+    top: 173px;
+
+    position: absolute;
+    right: 2.63%;
+    bottom: 59.23%;
+    font-family: Playfair Display,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.marrakesh p {
+    height: 266px;
+    width: 295px;
+    left: 47px;
+    top: 227px;
+
+    font-family: Open Sans,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    color: #000000;
+}
+
+
+.siemreap {
+    height: 493px;
+    width: 342px;
+    left: 557px;
+    top: 916px;
+    border-radius: 0px;
+    position: absolute;
+}
+
+.siemreap h3 {
+    display: flex;
+    height: 28px;
+    width: 246px;
+    left: 48px;
+    top: 173px;
+    position: absolute;
+    font-family: Playfair Display,sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: left;
+
+
+    color: #000000;
+}
+
+.siemreap p {
+    position: absolute;
+    height: 266px;
+    width: 295px;
+    left: 47px;
+    top: 227px;
+    margin-top: 25px;
+    font-family: Open Sans,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+}
+
+
+.istanbul {
+    height: 493px;
+    width: 342px;
+    left: 1017px;
+    top: 918px;
+    border-radius: 0px;
+    position: absolute;
+}
+
+.istanbul h3 {
+    height: 28px;
+    width: 243px;
+    left: 48px;
+    top: 173px;
+    font-family: Playfair Display,sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    position: absolute;
+    right: 14.91%;
+    bottom: 59.23%;
+}
+
+.istanbul p {
+    height: 266px;
+    width: 295px;
+    left: 47px;
+    top: 227px;
+    margin-top: 25px;
+    font-family: Open Sans,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    color: #000000;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.img-content {
+    height: 157px;
+    width: 342px;
+    left: 19px;
+    top: 0px;
+    border-radius: 0px;
+    position: absolute;
+    right: -5.56%;
+    bottom: 68.15%;
+}
+
+.footer-figma {
+    height: 168px;
+    width: 1445px;
+    left: 29px;
+    top: 1464px;
+    border-radius: 0px;
+    position: absolute;
+}
+
+.footer-figma-background{
+    height: 90.7291259765625px;
+    width: 1445px;
+    left: -34px;
+    top: 7px;
+    border-radius: 0px;
+    position: absolute;
+    right: 2.01%;
+    bottom: 41.83%;
+    background: #16595A;
+}
+
+.aboutTravel {
+    height: 80px;
+    width: 517px;
+    left: 451px;
+    top: 529px;
+    font-family: Playfair Display,sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    position: absolute;
+    color: #000000;
+}
