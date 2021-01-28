@@ -296,3 +296,20 @@ li {
     position: absolute;
     color: #000000;
 }
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #020000;
+    border-top: 0;
+    border-bottom: 0;
+}
