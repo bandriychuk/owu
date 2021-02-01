@@ -38,6 +38,14 @@
     text-decoration: none;
 }
 
+.header-nav-text a span {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #020202;
+    text-decoration: none;
+}
+
 .icon-web {
     display: flex;
     height: 24.83333396911621px;
@@ -110,7 +118,7 @@
     justify-content: space-around;
 }
 
-.cities-figma {
+.cities-figma, .blog-cities-figma {
     display: flex;
     align-items: center;
     position: relative;
@@ -121,7 +129,7 @@
     margin-bottom: 50px;
 }
 
-.marrakesh {
+.marrakesh,.content-1 {
     height: 493px;
     width: 30%;
     margin-left: 75px;
@@ -164,7 +172,7 @@
 }
 
 
-.siemreap {
+.siemreap, .content-2{
     height: 493px;
     width: 30%;
 }
