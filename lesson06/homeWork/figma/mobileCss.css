@@ -111,7 +111,7 @@
     }
 
     .footer-figma-background {
-        display: flex;
+        position: absolute;
         height: 50px;
         width: 100%;
         background: #16595A;
