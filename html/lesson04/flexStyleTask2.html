@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            display: flex;
+            justify-content: flex-start;
+            background: cyan;
+            width: auto;
+            height: 100%;
+            flex-direction: column;
+            box-sizing: border-box;
+            margin: 5px 5px 5px 5px;
+        }
+
+        .headerFlex {
+            width: 100%;
+            height: 10%;
+            background: gold;
+        }
+
+        .bodyFlex {
+            width: 100%;
+            height: 780px;
+            background: #e8e8e8;
+            align-items: flex-end;
+        }
+
+        .topBody {
+            display: flex;
+            width: 100%;
+            height: 80%;
+            background: #e8e8e8;
+            margin: 5px 0px 5px 0px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+
+        .topBodyRightSide {
+            display: flex;
+            width: 65%;
+            height: 100%;
+            background: #7e5b5b;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .rightSectionTop {
+            width: 90%;
+            height: 5%;
+            background: #f4eded;
+        }
+
+        .rightSectionCenter {
+            display: flex;
+            width: 90%;
+            height: 40%;
+            background: lightskyblue;
+            margin-right: 5px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rightSectionSecond {
+            width: 90%;
+            height: 30%;
+            background: lightskyblue;
+        }
+
+        .rightSectionFooter {
+            width: 90%;
+            height: 5%;
+            background: darkgray;
+        }
+
+        .topBodyLeftSide {
+            width: 33%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: #db7d7d;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .headerLeft {
+            width: 90%;
+            height: 10%;
+            background: yellow;
+        }
+
+        .navLeft {
+            width: 90%;
+            height: 70%;
+            background: lightskyblue;
+        }
+
+        .footerLeft {
+            width: 90%;
+            height: 10%;
+            background: darkgray;
+        }
+
+        .footerFlex {
+            width: 100%;
+            height: 10%;
+            background: orange;
+            text-align: center;
+        }
+
+        .rightInnerHeader {
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
+        }
+
+        .rightInnerP1 {
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
+        }
+
+        .rightInnerP2 {
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
+        }
+
+        .rightInnerFooter {
+            width: 90%;
+            height: 15%;
+            background: #f4eded;
+        }
+
+        .article1 {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .rightSectionSecond {
+            display: flex;
+            width: 90%;
+            height: 40%;
+
+        }
+
+        .article2 {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .rightSecondInnerHeader {
+            width: 90%;
+            height: 10%;
+            background: #f4eded;
+        }
+
+        .rightBlock {
+            display: flex;
+            width: 90%;
+            height: 70%;
+            background: lightskyblue;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rightSecondInnerFooter {
+            width: 90%;
+            height: 10%;
+            background: #f4eded;
+        }
+
+        .rightSecondBlockP {
+            display: flex;
+            width: 65%;
+            height: 100%;
+            background: #f4eded;
+        }
+
+        .aside {
+            display: flex;
+            width: 32%;
+            height: 100%;
+            background: #f4eded;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="bodyFlex">
+        <div class="headerFlex"></div>
+        <div class="topBody">
+            <div class="topBodyLeftSide">
+                <div class="headerLeft">Header</div>
+                <div class="navLeft">Nav</div>
+                <div class="footerLeft">Footer</div>
+            </div>
+            <div class="topBodyRightSide">
+                <div class="rightSectionTop">RightHeader</div>
+                <div class="rightSectionCenter">
+                    <div class="article1">
+                        <div class="rightInnerHeader">rightInnerHeader</div>
+                        <div class="rightInnerP1">rightInnerP1</div>
+                        <div class="rightInnerP2">rightInnerP2</div>
+                        <div class="rightInnerFooter">rightInnerFooter</div>
+                    </div>
+                </div>
+                <div class="rightSectionSecond">
+                    <div class="article2">
+                        <div class="rightSecondInnerHeader">rightSecondInnerHeader</div>
+
+                        <div class="rightBlock">
+                            <div class="rightSecondBlockP"></div>
+                            <div class="aside"></div>
+                        </div>
+
+                        <div class="rightSecondInnerFooter">rightSecondInnerFooter</div>
+                    </div>
+                </div>
+                <div class="rightSectionFooter">RightSectionFooter</div>
+            </div>
+        </div>
+        <div class="footerFlex">Footer</div>
+    </div>
+</div>
+<!--    -->
+<!--    flex-direction: row-reverse;-->
+<!--    justify-content:center;-->
+<!--    align-items:flex-end;-->
+<!--    flex-direction: column-reverse;-->
+<!--    flex-wrap: wrap;-->
+
+</div>
+</body>
+</html>

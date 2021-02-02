@@ -1,0 +1,148 @@
+.container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f80101;
+    display: block;
+    /*padding: 1.5em 1.5em 1.5em 1.5em;*/
+}
+
+.header {
+    background: #fcfcfc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+
+.mainContent {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    background: #fcfcfc;
+}
+
+.footer {
+    background: #fcfcfc;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+}
+
+.mainBlock {
+    box-sizing: border-box;
+    display: block;
+}
+
+.leftTable {
+    width: 20%;
+    height: 30%;
+    float: left;
+    box-sizing: border-box;
+    background: #fcfcfc;
+    display: block;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.agenda {
+    text-align: center;
+}
+
+.centralTable {
+    width: 50%;
+    height: 30%;
+    float: left;
+    display: block;
+    background: #fcfcfc;
+    margin: 0px 0px 10px 0px;
+    text-align: left;
+}
+
+.rightTable {
+    width: 30%;
+    height: 40%;
+    box-sizing: border-box;
+    float: right;
+    display: block;
+    background: #fcfcfc;
+    overflow: hidden;
+    margin: 10px 0px 0px 0px;
+    padding-left: 10px;
+}
+
+.clear {
+    clear: both;
+    border: 5px red solid;
+}
+
+.contentForBlock1 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.contentForBlock2 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.contentForBlock3 {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.contentForBlock4 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.contentForBlock5 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+
+.backButton {
+    width: 70px;
+    height: 55px;
+    border: #e7d9d9 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menuSelectButton {
+    width: 200px;
+    height: 30px;
+    border: #e7d9d9 3px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menuSelectButton1 {
+    width: 200px;
+    height: 40px;
+    border: #e7d9d9 3px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.textBlock {
+    text-align: left;
+}
+
+.trebleText{
+    text-align: left;
+}

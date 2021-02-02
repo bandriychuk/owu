@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display, sans-serif;
+}
+
+.body-figma {
+    width: 1445px;
+    height: 900px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.header-figma {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 66px;
+    background: #FFFFFF 95%;
+}
+
+.header-nav-text {
+    display: flex;
+    height: 18.43603515625px;
+    width: 400px;
+    column-gap: 34px;
+}
+
+.header-nav-text a {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #020202;
+    text-decoration: none;
+}
+
+.header-nav-text a span {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #020202;
+    text-decoration: none;
+}
+
+.icon-web {
+    display: flex;
+    height: 24.83333396911621px;
+    width: 114.33424377441406px;
+    column-gap: 24px;
+}
+
+.under-header-line {
+    width: 100%;
+    border: 1px solid #e30909;
+}
+
+.content-slider {
+    display: flex;
+    width: 100%;
+    height: 671px;
+    overflow: hidden;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: unset;
+    cursor: pointer;
+    background-color: #020202;
+    background-clip: unset;
+    border-top: 0;
+    border-bottom: 0;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.photo-slider {
+    display: flex;
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    top: 790px;
+    left: 0px;
+    border-radius: 20px;
+    margin-bottom: -5px;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.under-slider {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content-center-places {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cities-figma, .blog-cities-figma {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    height: 555px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.marrakesh,.content-1 {
+    height: 493px;
+    width: 30%;
+    margin-left: 75px;
+}
+
+.marrakesh h3 {
+    text-align: center;
+    height: 28px;
+    width: 285px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    right: 2.63%;
+    bottom: 59.23%;
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.marrakesh p {
+    height: 234px;
+    width: 295px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    box-sizing: border-box;
+    border-left: #ED8651 solid 2px;
+    padding-left: 23px;
+    right: 0%;
+    bottom: 0%;
+    color: #000000;
+}
+
+
+.siemreap, .content-2{
+    height: 493px;
+    width: 30%;
+}
+
+.siemreap h3 {
+    display: flex;
+    height: 28px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-family: Playfair Display, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #000000;
+}
+
+.siemreap p {
+    height: 281px;
+    width: 295px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 23px;
+    color: #000000;
+    border-left: #ED8651 solid 2px;
+}
+
+.img-content {
+    height: 157px;
+    width: 342px;
+}
+
+.istanbul {
+    height: 493px;
+    width: 30%;
+}
+
+.istanbul h3 {
+    display: flex;
+    height: 28px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-family: Playfair Display, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    right: 14.91%;
+    bottom: 59.23%;
+}
+
+.istanbul p {
+    height: 306px;
+    width: 295px;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    padding-left: 23px;
+    right: 0%;
+    bottom: 0%;
+    color: #000000;
+    border-left: #ED8651 solid 2px;
+}
+
+.footer-figma-background {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background: #16595A;
+}
+
+.aboutTravel {
+    position: absolute;
+    height: 80px;
+    width: 517px;
+    left: 451px;
+    top: 529px;
+    font-family: Playfair Display,sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+/*Button mobile*/
+.button_mobile {
+    display: none;
+    /*display: flex;*/
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_mobile span {
+    position: relative;
+    width: 80%;
+    height: 7px;
+    border-radius: 6px;
+    background-color: #ED8651;
+    cursor: pointer;
+}
+
+.button_mobile span:before, .button_mobile span:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ED8651;
+    display: block;
+    border-radius: 6px;
+}
+
+.button_mobile span:before {
+    top: -12px;
+}
+
+.button_mobile span:after {
+    bottom: -12px;
+}
+
+.active.button_mobile span:before {
+    top: 0px;
+}
+
+.active.button_mobile span:after {
+    bottom: 0px;
+}

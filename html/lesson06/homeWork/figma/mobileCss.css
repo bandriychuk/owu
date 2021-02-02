@@ -1,0 +1,124 @@
+@media screen and (max-width: 561px) {
+
+    .content-slider, .under-slider, .aboutTravel {
+        display: none;
+    }
+
+    .body-figma {
+        width: 375px;
+        height: 812px;
+    }
+
+    /*.header-nav-text {*/
+    /*    position: absolute;*/
+    /*    !*height: 18.43603515625px;*!*/
+    /*    width: 400px;*/
+    /*    flex-direction: column;*/
+    /*    align-items: center;*/
+    /*    column-gap: 34px;*/
+    /*    padding-top: 65px;*/
+    /*    z-index: 1;*/
+    /*    height: 37vh;*/
+    /*    row-gap: 10px;*/
+    /*}*/
+
+    .header-figma {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 375px;
+        height: 66px;
+        background: #FFFFFF 95%;
+    }
+
+    .header-nav-text {
+        position: absolute;
+        top: 68px;
+        height: 75px;
+        width: 375px;
+        row-gap: 2px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ED8651;
+        left: -100%;
+        transition: 500ms;
+    }
+
+    .header-nav-text a {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #020202;
+        text-decoration: none;
+    }
+
+    .icon-web {
+        display: flex;
+        height: 24.83333396911621px;
+        width: 114.33424377441406px;
+        row-gap: 10px;
+        margin-right: 15px;
+    }
+
+
+
+    .content-center-places {
+        display: flex;
+        width: 100%;
+        height: 150px;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .under-header-line {
+        width: 375px;
+    }
+
+    .button_mobile {
+        display: flex;
+        color: #ED8651;
+    }
+
+    .cities-figma {
+        display: flex;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .marrakesh {
+        height: 493px;
+        width: 30%;
+        margin-left: -245px;
+    }
+
+    .siemreap {
+        height: 493px;
+        width: 30%;
+        margin-left: -245px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .istanbul {
+        height: 493px;
+        width: 30%;
+        margin-left: -245px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .footer-figma-background {
+        position: absolute;
+        height: 50px;
+        width: 100%;
+        background: #16595A;
+        top: 1800px;
+    }
+
+    .active.header-nav-text{
+        left: 0;
+    }
+}
