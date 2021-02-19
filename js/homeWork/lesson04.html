@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<div id="cars-list"></div>
+
+<script>
+
+	// console.log('№ 1 - створити функцію яка виводить масив');
+	// function getArrInConsole(arr) {
+	// 	for (const argument of arr) {
+	// 		console.log(argument);
+	// 	}
+	// }
+	//
+	// console.log('\n');
+
+	// console.log('№ 2 - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.');
+	//
+	// function fillingArray(arrSize) {
+	// 	let arr = [];
+	// 	for (let i = 0; i < arrSize; i++) {
+	// 		arr[i] = Math.floor(Math.random() * 235 - 8);
+	// 	}
+	// 	getArrInConsole(arr);
+	// }
+	//
+	//
+	// let sizeArr = fillingArray(5);
+	// console.log(sizeArr);
+	// console.log('\n');
+
+	// console.log('№ 3 - створити функцію яка приймає три числа та виводить та повертає найменше.');
+	//
+	// function returnMin(a, b, c) {
+	// 	let min;
+	//
+	// 	if (a <= b && a <= c) {
+	// 		min = a;
+	// 	} else if (b <= a && b <= c) {
+	// 		min = b;
+	// 	} else if (c <= b && b <= a) {
+	// 		min = c;
+	// 	}
+	//
+	// 	return min;
+	//
+	// }
+	//
+	// console.log('Min number are ===> ' + returnMin(12, 40, 3));
+	//
+	// console.log('\n');
+
+	// console.log('№ 4 - створити функцію яка приймає три числа та виводить та повертає найбільше.');
+	//
+	// function maxNumber(a, b, c) {
+	// 	if (a > b && a > c) {
+	// 		return a;
+	// 	} else if (b > a && b > c) {
+	// 		return b;
+	// 	} else if (c > a && c > b) {
+	// 		return c;
+	// 	} else {
+	// 		console.log('asdfsadfas');
+	// 	}
+	// }
+	//
+	// console.log('Max number are ===> ' + maxNumber(121, 400, 332));
+	//
+	// console.log('\n');
+
+	// console.log('№ 5 - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше\n');
+	//
+	// function returnMinPrintMax() {
+	// 	let min = arguments [0];
+	// 	let max = arguments [0];
+	//
+	// 	for (const item of arguments) {
+	// 		if (item > max) max = item;
+	// 		if (item < min) min = item;
+	// 	}
+	// 	console.log('max', max);
+	// 	return min;
+	// }
+	// const min = returnMinPrintMax(1,2,3,4,5,6,99,78,9,-120);
+	// console.log(min);
+	//
+	// console.log('\n');
+
+	// console.log('№ 6 - створити функцію яка виводить масив');
+	// let someArr = [1, 2, 3, 5, 6, 700, 8, 99, 9];
+	// console.log(someArr);
+	// console.log('\n');
+
+	// console.log('№ 7 - створити функцію яка повертає найбільше число з масиву');
+	// const getMaxValueFromArray = (array) => {
+	// 	let max = array[0];
+	// 	for (const item of array) {
+	// 		if (max < item) max = item;
+	// 	}
+	// 	return max;
+	// };
+	//
+	// const  someArrForMaxValue = getMaxValueFromArray([1,23,4,5,6,7,7,8,90,1,2]);
+	// console.log("Max value from array => " + someArrForMaxValue);
+	// console.log('\n');
+
+	// console.log('№ 8 - створити функцію яка повертає найменьше число з масиву');
+	// const getMinValueFromArray = (array) => {
+	// 	let min = array[0];
+	// 	for (const item of array) {
+	// 		if (min > item) min = item;
+	// 	}
+	// 	return min;
+	// };
+	//
+	// const  someArrForMinValue = getMinValueFromArray([1,23,4,5,6,7,7,8,90,1,2,-2]);
+	// console.log("Min value from array => " + someArrForMinValue);
+	// console.log('\n');
+
+	// console.log('№ 9 - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.');
+	// function getArrayValue(arr){
+	// 	let counter = 0;
+	// 	for (const arrElement of arr) {
+	// 		counter+=arrElement;
+	// 	}
+	// 	return counter;
+	// }
+	//
+	// let somArr1 = [1,2,3,4,5,6,7,7,8,9,9];
+	// console.log(getArrayValue(somArr1));
+	// console.log('\n');
+
+	// console.log('№ 10 - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.');
+	// function getAverageValue(arr){
+	// 	let counter = 0;
+	// 	for (const arrElement of arr) {
+	// 		counter+=arrElement/arr.length;
+	// 	}
+	// 	return counter;
+	// }
+	//
+	// let somArr1 = [1,2,3,4,4,5,4,6,7,8,9,10,20];
+	// console.log(getAverageValue(somArr1));
+	// console.log('\n');
+
+	// console.log('№ 11 - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості обєктів в масиві');
+	// let somA = [1,23,4,{},{}]
+	//
+	// function arrCountElements(arr){
+	// 	let count = 0;
+	// 	for (const item of arr) {
+	// 		if (typeof item === 'object'){
+	// 			count++;
+	// 		}
+	// 	}
+	// 	return count;
+	// }
+	//
+	//
+	// let countObj = arrCountElements(somA);
+	// console.log(countObj);
+	// console.log('\n');
+
+	// console.log('№ 12 - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них');
+	// let somA = [1,23,4,{name:"", age:""},{color:"", style:""}]
+	//
+	// function arrCountElements(arr){
+	// 	let count = 0;
+	// 	for (const item of arr) {
+	// 		if (typeof item === 'object'){
+	// 			for (const key in item) {
+	// 				count++;
+	// 			}
+	// 		}
+	// 	}
+	// 	return count;
+	// }
+	//
+	// let countObj = arrCountElements(somA);
+	// console.log(countObj);
+	// console.log('\n');
+
+	// console.log('№ 13 - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.');
+	// // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
+	// // 	Приклад
+	// // 	[1,2,3,4]
+	// // 	[2,3,4,5]
+	// // результат
+	// // 	[3,5,7,9]
+	//
+	// function splitArray(arr1, arr2){
+	// 	let result = [];
+	// 	for (let i = 0; i < arr1.length; i++) {
+	// 		result.push(arr1[i] + arr2[i]);
+	// 	}
+	// 	return result;
+	// }
+	//
+	// console.log(splitArray([1, 2, 3, 4], [2, 3, 4, 5]));
+	// console.log('\n');
+
+	console.log('№14 - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"\n' +
+		'- *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.\n' +
+		'Двожина масиву від 2 до 100\n' +
+		'Приклад\n' +
+		'[1,0,6,0,3] => [1,6,3,0,0]\n' +
+		'[0,1,2,3,4] => [1,2,3,4,0]\n' +
+		'[0,0,1,0]   => [1,0,0,0]');
+
+	// console.log('№15 Створити функцію яка :');
+
+	// console.log("№15.1 Створити функцію яка : Додає в боді блок з текстом 'Hello owu' ");
+	// console.log("№15.2 Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи");
+	//
+	// function createElementInBody(tag, text){
+	// 	let element = document.createElement(tag);
+	// 	element.innerText = text;
+	// 	document.body.appendChild(element);
+	// }
+	//
+	// createElementInBody('div', 'Hello owu');
+
+	// let cars = [
+	// 	{model: 'Ford Edge Sport', year: 2016, horsepower: 325, color: 'black'},
+	// 	{model: 'Audi A5 SR', year: 2017, horsepower: 300, color: 'white'},
+	// 	{model: 'BMW X5 M', year: 2018, horsepower: 290, color: 'blue'},
+	// 	{model: 'Ford Mustang', year: 2019, horsepower: 100, color: 'Red'},
+	// 	{model: 'Ford Explorer ST ', year: 2020, horsepower: 365, color: 'navi'},
+	// 	{model: 'Audi A6', year: 2021, horsepower: 250, color: 'Silver'},
+	// 	{model: 'Dodge Durango', year: 2015, horsepower: 275, color: 'yellow'},
+	// 	{model: 'Chevrolet Camaro', year: 2014, horsepower: 310, color: 'pink'},
+	// 	{model: 'Honda Civic', year: 2013, horsepower: 195, color: 'brown'},
+	// 	{model: 'Fiat Scudo', year: 2012, horsepower: 150, color: 'purple'},
+	// ];
+
+	// console.log('№15.3 приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.' +
+	// 	'Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці\n' +
+	// 	'\tДля кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.' +
+	// 	'Для кожної властивості створити всередені блока автомоблія свій блок',
+	// );
+	//
+	//
+	// function createElementWithArr(idTag, carsArr) {
+	// 	for (const car of carsArr) {
+	// 		let container = document.getElementById(idTag);
+	// 		let cars = document.createElement('div');
+	// 		let carsModel = document.createElement('div');
+	// 		let year = document.createElement('div');
+	// 		let horsepower = document.createElement('div');
+	// 		let color = document.createElement('div');
+	//
+	// 		carsModel.innerText = `${car.model}`;
+	// 		year.innerText = `${car.year}`;
+	// 		horsepower.innerText = `${car.horsepower}`;
+	// 		color.innerText = `${car.color}`;
+	//
+	// 		cars.style.border = '5px solid silver';
+	// 		cars.style.textAlign = 'center';
+	//
+	// 		cars.appendChild(carsModel);
+	// 		cars.appendChild(year);
+	// 		cars.appendChild(horsepower);
+	// 		cars.appendChild(color);
+	//
+	// 		container.appendChild(cars);
+	// 	}
+	// }
+	//
+	// createElementWithArr('cars-list', cars);
+
+	// console.log('№16 функція приймає 2 масиви з рівною кількістю обєктів та зєднює в один обєкт користувача та місто з відповідними "id" та "user_id" ' +
+	// 	'та повертає масив цих зєднаних обєктів.\n');
+	//
+	// let usersId = [
+	// 	{id: 1, name: 'vasya', age: 31, status: false},
+	// 	{id: 2, name: 'petya', age: 30, status: true},
+	// 	{id: 3, name: 'kolya', age: 29, status: true},
+	// 	{id: 4, name: 'olya', age: 28, status: false}];
+	//
+	// let citiesWithId = [
+	// 	{user_id: 3, country: 'USA', city: 'Portland'},
+	// 	{user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+	// 	{user_id: 2, country: 'Poland', city: 'Krakow'},
+	// 	{user_id: 4, country: 'USA', city: 'Miami'}];
+	//
+	//
+	// function concatArrById(usersArr, citiesArr) {
+	// 	for (const user of usersArr) {
+	// 		for (const city of citiesArr) {
+	// 			if (user.user_id === city.id) {
+	// 				user.adress = city;
+	// 			}
+	// 		}
+	// 	}
+	//
+	// 	return usersArr;
+	// }
+	//
+	// console.log(concatArrById(usersId, citiesWithId));
+
+	// console.log('№16 Та робимо це функцією.При цьому правила отримувати через аргумент.\n' +
+	// 	'\t"Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.\n' +
+	// 	'\tПри цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.\n' +
+	// 	'\tРезультатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html');
+	//
+	// let rules = [
+	// 	{
+	// 		title: 'Первое правило Бойцовского клуба.',
+	// 		body: 'Никому не рассказывать о Бойцовском клубе.',
+	// 	},
+	// 	{
+	// 		title: 'Второе правило Бойцовского клуба.',
+	// 		body: 'Никогда никому не рассказывать о Бойцовском клубе.',
+	// 	},
+	// 	{
+	// 		title: 'Третье правило Бойцовского клуба.',
+	// 		body: 'В схватке участвуют только двое.',
+	// 	},
+	// 	{
+	// 		title: 'Четвертое правило Бойцовского клуба.',
+	// 		body: 'Не более одного поединка за один раз.',
+	// 	},
+	// 	{
+	// 		title: 'Пятое правило Бойцовского клуба.',
+	// 		body: 'Бойцы сражаются без обуви и голые по пояс.',
+	// 	},
+	// 	{
+	// 		title: 'Шестое правило Бойцовского клуба.',
+	// 		body: 'Поединок продолжается столько, сколько потребуется.',
+	// 	},
+	// 	{
+	// 		title: 'Седьмое правило Бойцовского клуба.',
+	// 		body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.',
+	// 	},
+	// 	{
+	// 		title: 'Восьмое и последнее правило Бойцовского клуба.',
+	// 		body: 'Новичок обязан принять бой.',
+	// 	},
+	//
+	// ];
+	//
+	// function rulesFoo(rules) {
+	// 	const wrap = document.createElement('div');
+	// 	wrap.id = 'wrap';
+	// 	for (let i = 0; i < rules.length; i++) {
+	// 		const rule = rules[i];
+	// 		const ruleName = document.createElement('div');
+	// 		const h2 = document.createElement('h2');
+	// 		const p = document.createElement('p');
+	//
+	// 		ruleName.className = `rules rule${i + 1}`;
+	// 		h2.innerText = rule.title;
+	// 		p.innerText = rule.body;
+	// 		ruleName.appendChild(h2);
+	// 		ruleName.appendChild(p);
+	//
+	// 		wrap.appendChild(ruleName);
+	// 	}
+	//
+	// 	document.body.appendChild(wrap);
+	// }
+	//
+	// rulesFoo(rules);
+
+
+</script>
+
+</body>
+</html>
