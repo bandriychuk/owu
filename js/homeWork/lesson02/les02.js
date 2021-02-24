@@ -345,7 +345,7 @@ console.log("<========  РОБОТА В АУДИТОРІЇ ========>")
 //
 //
 // for (let i = 0; i < arr.length; i++) {
-//     if (arr[i]%3 ===0){
+//     if (arr[i]%3 === 0){
 //         arr[i] = 'okten';
 //     }
 //     console.log(arr)

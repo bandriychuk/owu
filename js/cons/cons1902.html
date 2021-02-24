@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+
+
+	//Arguments
+
+	// function twoArgs(a, b) {
+	// 	return a + b;
+	// }
+	// function threeArgs(a, b, c) {
+	// 	return a - b - c;
+	// }
+
+	//overload
+	// function calc() {
+	// 	if (arguments.length === 2) {
+	// 		return twoArgs(arguments[0], arguments[1]);
+	// 	}
+	//
+	// 	if (arguments.length === 3) {
+	// 		return threeArgs(arguments[0], arguments[1], arguments[2]);
+	// 	}
+	// }
+
+
+	//rest Arguments
+
+	// function bar(...x){
+	// 	console.log(x);
+	// }
+	//
+	// bar(1,2,3);
+
+
+	//Деструктуризація масиву та обєкту
+
+	// let user = {
+	// 	id: 1,
+	// 	name: 'vasya',
+	// 	age: 13,
+	// 	status: true,
+	// 	wife:{status: false}
+	// };
+	//
+	// let {id, name, age, wife:{status:sts},wife} = user;
+	//
+	// console.log(name,id,status,age,wife,sts);
+
+	//Copy Object
+	//
+	// let user1 = {age:1 , status:true, age: 11, wife:{name: 'olya', father:{age:54}}};
+	// let user2 = {...user1};
+	//
+	// console.log(user1);
+	// user2.status = 'some'
+	// console.log(user2);
+
+	// Copy Object use JSON
+	//
+	// let ss = JSON.stringify(user1);
+	// let jsonUser = JSON.parse(ss);
+	// console.log(jsonUser);
+
+	//Деструктуризація масиву
+
+	let [a,b,c] = [11,22,33];
+	console.log(a,b,c);
+
+	let arr =[22,33,44];
+	let arr2 = [...arr,8,9]
+	console.log(arr2);
+
+	function printArr(...x){
+		for (const x1 of x) {
+			console.log(x1);
+		}
+	}
+
+	printArr(...arr);
+
+	//Найбільше значення з масиву
+	console.log(Math.min(...arr, 123, 1233, 1));;
+
+
+
+
+</script>
+
+</body>
+</html>
