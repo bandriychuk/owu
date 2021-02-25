@@ -32,6 +32,7 @@
 	// 	'пример:\n' +
 	// 	'zip([\'name\', \'age\', \'status\'], [\'Kira\', 12, false])  —>  {name: \'Kira\', age: 12, status: false }');
 	//
+	//
 	// let arrWithKeys = ['name', 'age', 'status'];
 	// let arrWithValues = ['Kira', 12, false];
 	//
@@ -41,7 +42,6 @@
 	// 		obj[arrKeys[i]]=arrValues[i];
 	// 	}
 	// 	return obj;
-	//
 	// }
 	//
 	// console.log(getObjectFromArray(arrWithKeys, arrWithValues));;
@@ -59,25 +59,35 @@
 	//
 	// console.log(unique);
 
-	// console.log("4) Flat: Вирівняти багаторівневий масив в однорівневий [1,3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]");
+	// console.log('4) Flat: Вирівняти багаторівневий масив в однорівневий ' +
+	// 	'[1,3, [\'Hello, \'World\', [9,6,1]], [\'oops\'], 9] -> ' +
+	// 	'[1, 3, \'Hello, \'World\', 9, 6, 1, \'oops\', 9]');
 	//
-	// let arr = [1,2, ['Hello','World', [9,6,1]], ['oops'], 9];
+	// let arr = [1, 2, ['Hello', 'World', [9, 6, 1]], ['oops'], 9];
 	//
-	// console.log("Before: ");
-	// console.log(arr);
+	// function rec(arr) {
+	// 	let ar2 = [];
 	//
-	// console.log("After ");
-	// console.log(arr.flat(4));
+	// 	if (arr.every(item => !Array.isArray(item))) return arr;
+	// 	for (let i = 0; i < arr.length; i++) {
+	// 		if (Array.isArray(arr[i])) {
+	// 			ar2 = [...ar2, ...arr[i]];
+	// 		}else {
+	// 			ar2.push(arr[i]);
+	// 		}
+	// 	}
+	// 	return rec(ar2);
+	// }
+	// console.log(rec(arr));
 
 	// console.log('5) создать функцию которая принимает число (высоту) и делает половину пирамидки (как в игре марио)');
-	//
 	// function getSomeFigure(number) {
 	// 	let lines = number;
 	// 	let str = ' ';
-	// 	let star = '*';
+	// 	let star = `${'*'}`;
 	// 	for (let i = 0; i < lines; i++) {
 	// 		str += star;
-	// 		console.log(str);
+	// 		console.log(str.padStart(number +1, ' '));
 	// 	}
 	// }
 	// getSomeFigure(15);
