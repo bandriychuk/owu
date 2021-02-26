@@ -6,6 +6,105 @@
 </head>
 <body>
 
-<script src="les05.js"></script>
+
+<script>
+
+	// let user = {
+	// 	name: 'vasya',
+	// 	age: 123,
+	// 	// function - поведінка обєкта
+	// 	greeting: function(){
+	// 		console.log("Hello world " + this.name);
+	// 	}
+	// }
+	//
+	// console.log(user.age);
+	// user.greeting()
+
+	//функція конструктор
+	// function User(name, age) {
+	// 	this.name = name;
+	// 	this.age = age;
+	// 	this.greeting = function(msg) {
+	// 		console.log(`${msg} my name is ${this.name} and age is - ${this.age}`);
+	// 	};
+	// }
+
+	//для виклику функції конструктора слід використовувати цю конструкцію
+	// let user = new User('vasya', 123);
+	// user.greeting()
+	// console.log(user);
+
+	//Реалізація різних методів для обєктів
+	// function User(name, age, greetingFn) {
+	// 	this.name = name;
+	// 	this.age = age;
+	// 	this.greeting = greetingFn;
+	// }
+	//
+	//
+	// let x = function(msg) {console.log(msg)};
+	// let user = new User('vasya', 321, x);
+	//
+	// console.log(user);
+	// user.greeting('hello!');
+
+	// function Product(title, price, categories) {
+	// 	this.title = title;
+	// 	this.price = price;
+	// 	this.categories = categories;
+	// }
+	//
+	// let product = new Product('Milk', 22, {a: 20, b: 80});
+
+	// let user = {
+	// 	name:'vasya',
+	// 	age: 12,
+	//
+	// 	//Стрілочна функція в контексті обєкту втрачає this
+	// 	greeting: ()=> console.log(this.age)
+	// };
+	//
+	// user.greeting();
+
+	// Заміна функцій конструкторів на класи
+	// class User {
+	// 	// В контексті класу завжди повинен бути  !'constructor'!
+	// 	constructor(name, age) {
+	// 		this.name = name;
+	// 		this.age = age;
+	// 		// this.greeting = function(){console.log("!!!!!!");}
+	// 	}
+	//
+	//
+	// 	//метод - це фкнкція яка привязана до певного класу
+	// 	//як стоврювати метод
+	// 	greeting() {
+	// 		console.log('Hello!');
+	// 	}
+	// }
+	//
+	// let user = new User('vasee', 123);
+	// console.log(user);
+	// user.greeting('asdf');
+
+	//Для отримання данних від іншого класу слід застосовувати extends
+	//Приклад
+	// class Customer extends User {
+	// 	constructor(name, age, status) {
+	// 		super(name, age);
+	// 		this.status = status;
+	// 	}
+	// 	buy(){
+	// 		console.log("aaaaa");
+	// 	}
+	// }
+	//
+	// let customer = new Customer('vas',123,true);
+	// console.log(customer);
+	// customer.greeting()
+	// customer.buy();
+
+</script>
 </body>
 </html>
