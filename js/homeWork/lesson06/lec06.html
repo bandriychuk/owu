@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+
+	let users = [
+		{name: 'vasya', age: 23, status: true},
+		{name: 'olya', age: 22, status: false},
+		{name: 'max', age: 20, status: true},
+		{name: 'anya', age: 21, status: false},
+	];
+
+	// let arr = [];
+	// for (const user of users) {
+	// 	if (user.status === false){
+	// 		arr.push(user)
+	// 	}
+	// }
+	// console.log(arr);
+
+	/** Колбек **/
+	// Filter
+	// Результат відпрацювання: true або false
+	// let filterTrue = users.filter(function(user) {
+	// 		return user.status;
+	// 	},);
+	// console.log(filterTrue);
+	//
+	// let filterArrowTrue = users.filter(user=>user.status);
+	// console.log(filterArrowTrue);
+
+	//Заміна циклу (Щоб вивести)
+	// users.forEach(value => console.log(value));
+
+	/** Сортування **/
+	//a - дорівню першому елементу масива
+	//b - дорівню другому елементу масива
+
+	// users.sort(function(a,b){
+	// 	//сортування обєктів по віці
+	// 	// виведе від меншого до більшого
+	// 	// return a.age - b.age;
+	// 	// для виведення від більшого до меншого
+	// 	return b.age - a.age;
+	// })
+
+	//Стрілочною функцією
+	// users.sort((a, b) => b.age = a.age);
+	// console.log(users);
+
+	/** Фільтрування та сортування елементів **/
+
+	//фільтрування
+	// let filter = users.filter(value => value.status);
+	// filter.sort((a, b) => a.age - b.age);
+	// console.log(filter);
+
+	//фільтрування, сортування, вивід
+	//чейнінг
+	// users
+	// 	.filter(value => value.status)
+	// 	.sort((a, b) => a.age - b.age)
+	// 	.forEach(value => console.log(value));
+
+	//Кожен колбек може прийняти 3 аргументи
+
+	// users.map((item, index, arr) => {
+	// 	console.log(item, index, arr);
+	// })
+
+	//map - бере item(може його змінювати) і повертає новий результуючий масив
+
+	// let mapResults = users.map((item,index)=>{
+	// 	item.id = index;
+	// 	return item;
+	// });
+	//
+	// console.log(mapResults);
+
+	//Find - поверне лише перший елемент
+
+	// let find = users.find(value => value.status);
+	// console.log(find);
+
+	// Every - приймає обєкти // повертає true або false // якщо всі елементи відповідають умові
+	// let every = users.every(value => value.age > 20);
+	// console.log(every);
+
+	/** Колбек **/
+
+	// Конструкція коллбеку
+	//Ми передаємо аргументи  (a,b )та вказуємо що з ними робити (a,b)=> a+b)
+
+	// function calculator(a, b, callbackFn) {
+	// 	return callbackFn(a, b);
+	// }
+	//
+	// console.log(calculator(10,20,(a,b)=> a+b));
+
+	// function print(items, callback){
+	// 	for (const item of items) {
+	// 		callback(item);
+	// 	}
+	// }
+	//
+	// print([11,22,33,444], (item)=> console.log(item + '!'));
+	// print([11,22,33,444], (item)=> {
+	// 	item+=100
+	// 	console.log(item);
+	// });
+
+	/** Реалізація метода Filter **/
+
+	//Array.prototype. - дозволяє взяти існуючий клас і розширити його!
+
+	// Array.prototype.greeting = function(){
+	// 	console.log('Hello!');
+	// }
+	//
+	// users.greeting();
+
+	// Array.prototype.customFilter = function(callback) {
+	// 	arr = [];
+	// 	for (const u of this) {
+	// 		if (callback(u)) {
+	// 			arr.push(u);
+	// 		}
+	// 	}
+	// 	return arr;
+	// };
+	//
+	// console.log(users.customFilter(users => users.status));;
+
+</script>
+
+</body>
+</html>

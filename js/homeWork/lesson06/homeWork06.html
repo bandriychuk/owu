@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<script>
+
+	// - создать массив с 20 числами.
+	// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+	// console.log('№1 -- при помощи метода sort и колбека  отсортировать массив.');
+	// arr.sort(function(a, b) {
+	// 	return a - b;
+	// });
+	// console.log(arr);
+	// console.log('\n');
+
+	// console.log('№2 -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.');
+	// arr.sort(function(a, b) {
+	// 	return b - a;
+	// });
+	// console.log(arr);
+	// console.log('\n');
+
+	// console.log('№3 -- при помощи filter получить числа кратные 3');
+	// let newArr = arr.filter(value => value % 3 === 0 && value !== 0);
+	// console.log(arr);
+	// console.log(newArr);
+	// console.log("\n");
+
+	// console.log('№4 -- при помощи filter получить числа кратные 10');
+	// let newArr = arr.filter(value => value % 10 === 0 && value !== 0);
+	// console.log(arr);
+	// console.log(newArr);
+	// console.log('\n');
+
+	// console.log('№5 -- перебрать (проитерировать) массив при помощи foreach()');
+	// arr.forEach(value => {console.log(value);});
+	// console.log('\n');
+
+	// console.log('№6 -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше');
+	// let moreThenThree = arr.map((item) => {
+	// 	item = item * 3;
+	// 	return item;
+	// });
+	//
+	// console.log(moreThenThree);
+	// console.log('\n');
+
+	// console.log('№7 - создать массив со словами на 15-20 элементов.');
+	// let words = [
+	// 	'a', 'b', 'c', 'd', 'e',
+	// 	'ab', 'bc', 'cd', 'de', 'ef',
+	// 	'asd', 'asdf', 'asdfg', 'asdfghj', 'asd123',
+	// 	'asdfasdg', 'asdfas', 'asdfasdf', 'asdfasd', 'asdfasd',
+	// ];
+
+	// console.log('№8 -- отсортировать его по алфавиту в восходящем порядке.');
+	// let word = words.sort(function(a,b){
+	// 	return a.localeCompare(b);
+	// });
+	// console.log(word);
+
+	// console.log('№9 -- отсортировать его по алфавиту  в нисходящем порядке.');
+	// let word1 = words.sort(function(a,b){
+	// 	return b.localeCompare(a);
+	// });
+	// console.log(word1);
+
+	// console.log('№10 -- отфильтровать слова длиной менее 4х символов');
+	// let wordsLessThenFour = words.filter(value => value.length <5);
+	// console.log(wordsLessThenFour);
+
+	// console.log('№11 -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце');
+	// let wordWithChar = words.map(value => value + '!');
+	// console.log(wordWithChar);
+
+	// Дан масив :
+	// let users = [
+	// 	{name: 'vasya', age: 31, status: false},
+	// 	{name: 'petya', age: 30, status: true},
+	// 	{name: 'kolya', age: 29, status: true},
+	// 	{name: 'olya', age: 28, status: false},
+	// 	{name: 'max', age: 30, status: true},
+	// 	{name: 'anya', age: 31, status: false},
+	// 	{name: 'oleg', age: 28, status: false},
+	// 	{name: 'andrey', age: 29, status: true},
+	// 	{name: 'masha', age: 30, status: true},
+	// 	{name: 'olya', age: 31, status: false},
+	// 	{name: 'max', age: 31, status: true}];
+
+	// console.log('№12 - відсортувати його за  віком (зростання , а потім окремо спадання)');
+	// let olderFilter = users.filter(value => value.age);
+	// olderFilter.sort((a, b) => b.age - a.age);
+	// console.log(olderFilter);
+	//
+	// let filterForJunior = users.filter(value => value.age);
+	// filterForJunior.sort((a, b) => a.age - b.age);
+	// console.log(filterForJunior);
+	// console.log('\n');
+
+	// console.log('№13 - відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)');
+	// let nameLength = users.filter(value => value.name);
+	// nameLength.sort((a, b) => a.name.length - b.name.length);
+	// console.log(nameLength);
+
+	// console.log('№14 - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор ' +
+	// 	'(По якому принципу його створювати - ваше рішення), та зберегти це в новий масив ' +
+	// 	'(первинний масив залишиться без змін)');
+	// console.log(users);
+	// let newUsers = JSON.stringify(users);
+	// let usersWithId = JSON.parse(newUsers);
+	//
+	// let newUsers1 = usersWithId.map((user, index) => {
+	// 	user.id = ++index;
+	// 	return user;
+	// });
+	//
+	// console.log(users);
+	// console.log(newUsers1);
+
+	// console.log('№15 - відсортувати його за індентифікатором');
+	// let idFilter = arrWithUserId.sort((a, b) => a.id - b.id);
+	// console.log(idFilter);
+	// console.log('\n');
+
+	// console.log('№16 -- написать функцию калькулятора с 2мя числами и колбеком
+	// function calculatorForTwoArguments(a, b, callbackFn) {
+	// 	return callbackFn(a, b);
+	// }
+	//
+	// console.log(calculatorForTwoArguments(10, 20, (a, b) => a + b));
+
+	// console.log('№17 -- написать функцию калькулятора с 3мя числами и колбеком
+	// console.log(calculatorForThreeArguments(10, 20, 30, (a, b, c) => a + b + c));
+	// function calculatorForThreeArguments(a, b, c, callbackFn) {
+	// 	return callbackFn(a, b, c);
+	// }
+
+</script>
+
+</body>
+</html>
