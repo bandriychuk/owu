@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+
+	let users = [
+		{name: 'vasya', age: 23, status: true},
+		{name: 'olya', age: 22, status: false},
+		{name: 'max', age: 20, status: true},
+		{name: 'anya', age: 21, status: false},
+	];
+
+	// users
+	// 	.filter(value => value.status)
+	// 	.sort((a,b) => a.age - b.age)
+	// .forEach(value => {
+	// 	let div = document.createElement('div');
+	// 	div.innerText = JSON.stringify(value);
+	// 	document.body.appendChild(div);
+	// })
+
+
+	Array.prototype.customForEach = function(callback){
+		for (const elemOfThis of this) {
+			callback(elemOfThis);
+		}
+	}
+
+	users.customForEach((x)=> console.log(x.asdaf = 'sss111s'));
+
+
+</script>
+
+</body>
+</html>

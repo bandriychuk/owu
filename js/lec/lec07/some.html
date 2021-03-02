@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<label for="x">
+	status:true
+</label>
+<input id="x" type="checkbox">
+
+<div id="target">
+
+</div>
+
+<script>
+
+	let users = [
+		{name: 'vasya', age: 23, status: true},
+		{name: 'olya', age: 22, status: false},
+		{name: 'max', age: 20, status: true},
+		{name: 'anya', age: 21, status: false},
+	];
+
+
+	function renderArr(arr, where) {
+		for (const arrElement of arr) {
+			let div = document.createElement('div');
+			div.innerText = JSON.stringify(arrElement);
+			where.appendChild(div);
+		}
+	}
+
+	let x = document.getElementById('x');
+
+	x.onclick = function() {
+		let target = document.getElementById('target');
+		if (x.checked) {
+			renderArr(users, target);
+		}else{
+			target.innerText = '';
+		}
+	};
+
+</script>
+</body>
+</html>

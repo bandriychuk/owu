@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+
+        #text {
+            width: 100px;
+            height: 100px;
+            background-color: #7e5b5b;
+            box-sizing: border-box;
+            border: 5px solid white;
+            transition: 300ms;
+        }
+
+
+        #buttonForTask2 {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0505;
+            box-sizing: border-box;
+            border: 5px solid #7cfd01;
+            transition: 300ms;
+        }
+
+        .table {
+            width: 450px;
+            height: 450px;
+            background-color: #d0fc56;
+            box-sizing: border-box;
+            border: 4px solid brown;
+        }
+
+
+        .
+
+	</style>
+</head>
+<body>
+
+<!-- Task №3-->
+<!--<input type="text" name="name" placeholder="Enter name">-->
+<!--<input type="number" name="age" placeholder="Enter age">-->
+<!--<button id="checkButton">send</button>-->
+
+
+<!-- Task № 4 -->
+<!--<div id="content"></div>-->
+
+
+<!-- Task №5 -->
+<!--<input type="text" name="name">-->
+<!--<button id="task№5">send</button>-->
+
+
+<!--Task №6 -->
+<!--<ul class="menu" id="menu">-->
+<!--	<li>-->
+<!--		<a href="#" id="menuList">Menu</a>-->
+<!--		<ul id="subMenu">-->
+<!--			<li>-->
+<!--				<a href="#"> Position 1</a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"> Position 1</a>-->
+<!--			</li>-->
+<!--			<li>-->
+<!--				<a href="#"> Position 1</a>-->
+<!--			</li>-->
+<!--		</ul>-->
+<!--	</li>-->
+<!--</ul>-->
+
+
+<!--Task №7 -->
+
+<!--<form id="task7">-->
+<!--	<input type="text" name="input1" placeholder="Enter name" value="someV1">-->
+<!--	<input type="text" name="input2" placeholder="Enter age" value="someV2">-->
+<!--</form>-->
+<!--<button id="target">send</button>-->
+
+
+<!--Task №8 -->
+<!--<input type="number" id="row" placeholder="Enter the count of row">-->
+<!--<input type="number" id="column" placeholder="Enter the count of column">-->
+<!--<input type="text" id="content" placeholder="Enter content">-->
+
+<!--<button id="createTableButton">Create table</button>-->
+
+<!--<div id="table"></div>-->
+
+
+<script>
+
+	//Як при повторному кліку щоб повернуло елемент?
+
+	// console.log('№1 - Создать произвольный елемент с id = text. ' +
+	// 	'Используя JavaScript, сделайте так,' +
+	// 	'чтобы при клике на кнопку исчезал элемент с id="text"');
+	//
+	// let textId = document.createElement('div');
+	// textId.setAttribute('id', 'text');
+	// document.body.appendChild(textId);
+	//
+	// textId.addEventListener('click', function() {
+	// 		let height = +getComputedStyle(textId).height.replaceAll('px', '');
+	// 		textId.style.height = height / height + 'px';
+	// 	},
+	// );
+
+	// console.log('№2	- Создайте кнопку, при клике на которую, она будет скрывать сама себя.');
+	// let buttonForTask2 = document.createElement('div');
+	// buttonForTask2.setAttribute('id', 'buttonForTask2');
+	// document.body.appendChild(buttonForTask2);
+	// buttonForTask2.addEventListener('click', function(){
+	// 	let height = +getComputedStyle(buttonForTask2).height.replaceAll('px','');
+	// 	buttonForTask2.style.height = height/height + 'px';
+	// });
+
+	// console.log('№3 - створити інпут який приймає вік людини та кнопку яка підтверджує дію.' +
+	// 	'При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, ' +
+	// 	'та повідомити про це користувача');
+	//
+	// let checkButton = document.getElementById('checkButton');
+	// checkButton.addEventListener('click', function checkUserAge() {
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let name = inputs[0].value;
+	// 	let age = inputs[1].value;
+	// 	let user = {name, age};
+	//
+	// 	if (name <= 0 && age<= 0){
+	// 		alert("Please enter your name and age");
+	// 	}else if (name <= 0){
+	// 		alert("Please enter your name");
+	// 	} else if (age <= 0){
+	// 		alert("Please `enter` your age")
+	// 	} else if (age < 18) {
+	// 		alert('You are younger then 18');
+	// 	}
+	//
+	// 	console.log(user);
+	// });
+
+	// console.log('№4 - Создать список комментариев , ' +
+	// 	'пример объекта коментария - {title : "lorem", body:"lorem ipsum dolo sit ameti"}.' +
+	// 	'Вывести список комментариев в документ, каждый в своем блоке.' +
+	// 	'Добавьте каждому комментарию по кнопке для сворачивания его body.');
+	//
+	// let commentsArr = [
+	// 	{title: 'lorem', body: 'lorem ipsum dolo sit ameti'},
+	// 	{title: 'lorem', body: 'lorem ipsum dolo sit ameti'},
+	// 	{title: 'lorem', body: 'lorem ipsum dolo sit ameti'},
+	// ];
+	//
+	// let content = document.getElementById('content');
+	// commentsArr.forEach(item => {
+	// 	let div = document.createElement('div');
+	// 	let h2 = document.createElement('h2');
+	// 	let p = document.createElement('p');
+	// 	let button = document.createElement('button');
+	// 	button.innerText = 'HideDoby';
+	// 	h2.innerText = item.title;
+	// 	p.innerText = item.body;
+	// 	button.onclick = () => {
+	// 		if (p.hidden) {
+	// 			p.hidden = false;
+	// 		} else {
+	// 			p.hidden = true;
+	// 		}
+	// 	};
+	// 	div.appendChild(h2);
+	// 	div.appendChild(p);
+	// 	div.appendChild(button);
+	// 	content.appendChild(div);
+	// });
+
+	// console.log('№5 ***- Сворити масив не цензцрних слів.' +
+	// 	'Сворити інпут текстового типу.' +
+	// 	'Якщо людина вводить слово і воно міститься в масиві не цензурних слів' +
+	// 	'кинути алерт з попередженням.' +
+	// 	'Перевірку робити при натисканні на кнопку');
+	//
+	// let arr = ['php','test2'];
+	//
+	// let checkButton = document.getElementById('task№5');
+	// checkButton.addEventListener('click', function checkUserAge() {
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let name = inputs[0].value;
+	// 	for (const userElement of arr) {
+	// 		if (userElement.toLowerCase() == name.toLowerCase()){
+	// 			alert("Не матюкайся!");
+	// 		}
+	// 	}
+	// });
+
+	// console.log('№6 - Создайте меню, которое раскрывается/сворачивается при клике');
+	// const a1 = document.getElementById("menuList");
+	// const subMenu = document.getElementById("subMenu");
+	// let flag = false;
+	//
+	// a1.onclick = event => {
+	// 	if (flag){
+	// 		subMenu.style.display = 'block';
+	// 		flag = false;
+	// 	}else {
+	// 		subMenu.style.display = 'none'
+	// 		flag = true;
+	// 	}
+	// }
+
+	// console.log('№7 - створити 2 форми  по 2 інпути в кожній. ' +
+	// 	'ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.' +
+	// 	'Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)' +
+	// 	'Доступ до інпутів через Forms API. ' +
+	// 	'Отже дайте формі та інпутам всі необхідні атрибути.');
+	//
+	// let target = document.getElementById('target');
+	// target.onclick = function() {
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let name = inputs[0].value;
+	// 	let age = inputs[1].value;
+	// 	let user = {name, age};
+	// 	console.log(user);
+	// };
+	//
+	// let main = document.forms.task7;
+	// console.log(main.input1.value);
+	// console.log(main.input2.value);
+
+	// console.log('№8 - Створити 3 инпута та кнопку. ' +
+	// 	'Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.' +
+	// 	'При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.');
+	//
+	// let createTableButton = document.getElementById('createTableButton');
+	// createTableButton.addEventListener('click', function createTableFromInputs() {
+	// 	const table = document.createElement('table');
+	// 	table.setAttribute('class','table')
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let row = inputs[0].value;
+	// 	let column = inputs[1].value;
+	// 	let content = inputs[2].value;
+	//
+	// 	for (let i = 0; i < row; i++) {
+	// 		const tr = document.createElement('tr');
+	// 		for (let j = 0; j < column; j++) {
+	// 			const th = document.createElement('th');
+	// 			th.style.border = '5px solid red';
+	// 			let contents = document.createElement('p');
+	// 			contents.innerText = content;
+	// 			th.appendChild(contents);
+	// 			tr.appendChild(th);
+	// 		}
+	// 		table.appendChild(tr);
+	// 	}
+	//
+	// 	document.body.appendChild(table);
+	// });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style type="text/css">
+
+        #box {
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            border: 1px solid black;
+	        transition: 300ms;
+        }
+
+	</style>
+</head>
+<body>
+
+
+<!-- будь-яка кнопка яка знаходиться в межах тегу form буде відправляти дані 'action="xxx"'-->
+<!--<form action="xxx">-->
+<input type="text" name="name">
+<input type="number" name="age">
+
+<textarea name="msg" id="" cols="15" rows="5"></textarea>
+
+<!--Для зчитування, що відправляється з кнопки: -->
+<!-- On click self-invoke function -->
+<!--<button onclick="getObject()">send</button>-->
+<button id="target">send</button>
+<!--</form>-->
+
+<div id="box"></div>
+
+<script>
+
+	// -- 1 --
+	// <button onclick="getObject()">send</button>
+	// function getObject() {
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let name = inputs[0].value;
+	// 	let age = inputs[1].value;
+	//
+	// 	let textAreaElement = document.getElementsByTagName('textarea')[0].value;
+	//
+	// 	let user = {name, age,msg: textAreaElement};
+	// 	console.log(user);
+	// }
+
+	//<button id="target">send</button>
+	let inputs = document.getElementsByTagName('input');
+
+	let target = document.getElementById('target');
+	// target.onclick = function(){
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let name = inputs[0].value;
+	// 	let age = inputs[1].value;
+	// 	let textAreaElement = document.getElementsByTagName('textarea')[0].value;
+	// 	let user = {name, age,msg: textAreaElement};
+	// 	console.log(user);
+	// }
+
+	//Щоб зчитати подію слід використати 'addEventListener';
+	//щоб додати декілька  EventListener слід додавати через конструкцію target(імя елемента).addEventListener('click', function() {}
+
+	target.addEventListener('click', function() {
+		let inputs = document.getElementsByTagName('input');
+		let name = inputs[0].value;
+		let age = inputs[1].value;
+		let textAreaElement = document.getElementsByTagName('textarea')[0].value;
+		let user = {name, age, msg: textAreaElement};
+		console.log(user);
+	});
+
+	target.addEventListener('click', () => console.log('hello!'));
+
+	//Зміна характеристик при наведені
+	//додати колір при наведені
+	for (const input of inputs) {
+		input.addEventListener('mouseover', () => {
+			input.style.background = 'silver';
+		});
+	}
+
+	//змінювати колір після забирання курсора з поля воводу
+	for (const input of inputs) {
+		input.addEventListener('mouseleave', () => {
+			input.style.background = 'white';
+		});
+	}
+
+	// Варіант 2 heat map site
+
+	let box = document.getElementById('box');
+
+	// box.onmousemove = function(e) {
+	// 	console.log(e.x, e.y);
+	// 	this.style.background = `rgb(${e.x},${e.y},${e.x})`;
+	// };
+
+	//heat map site
+
+	// let clientMap = [];
+	//
+	// document.onclick = function(e) {
+	// 	console.log(e.target);
+	// 	clientMap.push({coords: {x: e.x, y: e.y},target: e.target});
+	// };
+	//
+	// document.ondblclick = function(){
+	// 	console.log(clientMap);
+	// };
+
+	//отримання висоти блоку
+	box.onclick = function(e) {
+		let height = +getComputedStyle(box).height.replaceAll('px','');
+		box.style.height = height/2 + 'px';
+		box.style.transition = '300ms';
+
+	};
+
+	// console.log(box.style.height);
+	// let computedStyleBox = getComputedStyle(box)
+	// console.log(computedStyleBox.height);
+
+	//зчитування данних з інпутів
+	inputs[0].oninput = function(){
+		console.log(this.value);
+		box.innerText = this.value;
+	}
+</script>
+
+</body>
+</html>

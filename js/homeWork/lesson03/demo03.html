@@ -747,24 +747,24 @@
 	//
 	// document.body.appendChild(table);
 
-	// console.log('№28 за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt');
-	// const table = document.createElement('table');
-	//
-	// let enterTd = prompt("Enter table data");
-	// let enterTr = prompt("Enter table row");
-	//
-	// for (let i = 0; i < enterTr; i++) {
-	// 	const tr = document.createElement('tr');
-	//
-	// 	for (let j = 0; j < enterTd; j++) {
-	// 		const td = document.createElement('td');
-	// 		tr.appendChild(td);
-	// 	}
-	//
-	// 	table.appendChild(tr);
-	// }
-	//
-	// document.body.appendChild(table);
+	console.log('№28 за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt');
+	const table = document.createElement('table');
+
+	let enterTd = prompt("Enter table data");
+	let enterTr = prompt("Enter table row");
+
+	for (let i = 0; i < enterTr; i++) {
+		const tr = document.createElement('tr');
+
+		for (let j = 0; j < enterTd; j++) {
+			const td = document.createElement('td');
+			tr.appendChild(td);
+		}
+
+		table.appendChild(tr);
+	}
+
+	document.body.appendChild(table);
 
 	// console.log('№29 'Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії' +
 	// 	' - знайти всі елементі, які мають class' +
