@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+
+        .user {
+            border: 3px solid #4cadf1;
+            margin-bottom: 5px;
+        }
+
+        .post {
+            border: 3px solid #f8b405;
+            margin-bottom: 5px;
+        }
+	</style>
+</head>
+<body>
+
+<div id="users"></div>
+<div id="posts"></div>
+<div id="comments"></div>
+
+<script>
+
+	// console.log('№ 1  - Реалізувати друкарську машинку.\n' +
+	// 	'У вас є текст "Hello World\n' +
+	// 	'Ваша функція має друкувати цей текст по 1 симоволу в браузері \n' +
+	// 	'КОЖНА нова буква має бути з РАНДОМНОЮ заутримкою від 0.1 до 1 секунди\n' +
+	// 	'Цим самим ви маєте симулювати написання даного тексту юзером\n' +
+	// 	'Приклад: "Hello"\n' +
+	// 	'Затримки:\n' +
+	// 	'H (затримка 0.6)\n' +
+	// 	'e (затримка 0.1)\n' +
+	// 	'l (затримка 0.3)\n' +
+	// 	'l (затримка 0.7)\n' +
+	// 	'о (затримка 1)\n');
+	//
+	// new Promise(resolve => {
+	// 	setTimeout(() => {
+	// 		resolve('H');
+	// 	}, 600);
+	// })
+	// 	.then(value => {
+	// 		console.log(value);
+	// 		return new Promise(resolve => {
+	// 			setTimeout(() => {
+	// 				resolve('e');
+	// 			}, 100);
+	// 		});
+	// 	})
+	// 	.then(value => {
+	// 		console.log(value);
+	// 		return new Promise(resolve => {
+	// 			setTimeout(() => {
+	// 				resolve('l');
+	// 			}, 300);
+	// 		});
+	// 	})
+	// 	.then(value => {
+	// 		console.log(value);
+	// 		return new Promise(resolve => {
+	// 			setTimeout(() => {
+	// 				resolve('l');
+	// 			}, 700);
+	// 		});
+	// 	})
+	// 	.then(value => {
+	// 		console.log(value);
+	// 		return new Promise(resolve => {
+	// 			setTimeout(() => {
+	// 				resolve('o');
+	// 			}, 1000);
+	// 		});
+	// 	})
+	// 	.then(value => console.log(value));
+	// console.log('\n');
+
+	// console.log('№ 2 - за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users.');
+	// console.log('№ 3 - За допомогою document.createElement вивести їх в браузер.');
+	// console.log('№ 4 - Помістити кожен окремий обєкт в блок, при цьому кожен внутрішній обєкт в свій блок (блок в блоці).');
+	//
+	// let usersBody = document.getElementById('users');
+	//
+	// fetch('https://jsonplaceholder.typicode.com/users')
+	// 	.then(response => response.json())
+	// 	.then(users => {
+	// 		for (const user of users) {
+	// 			let userDiv = document.createElement('div');
+	// 			userDiv.classList.add('user');
+	// 			let name = document.createElement('p');
+	// 			let phone = document.createElement('p');
+	// 			let username = document.createElement('p');
+	// 			let email = document.createElement('p');
+	// 			let website = document.createElement('p');
+	//
+	// 			name.innerText = user.id + '. ' + user.name;
+	// 			phone.innerText = 'phone :  ' + user.phone.replaceAll('.', '-');
+	// 			username.innerText = 'username: ' + user.username;
+	// 			email.innerText = 'email: ' + user.email;
+	// 			website.innerText = 'website: ' + user.website;
+	//
+	// 			let address = document.createElement('div');
+	// 			address.classList.add('address');
+	//
+	// 			let p1 = document.createElement('p');
+	// 			let p2 = document.createElement('p');
+	// 			let p3 = document.createElement('p');
+	// 			let p4 = document.createElement('p');
+	//
+	// 			p1.innerText = user.address.city;
+	// 			p2.innerText = user.address.street;
+	// 			p3.innerText = user.address.suite;
+	// 			p4.innerText = user.address.zipcode;
+	//
+	// 			address.appendChild(p1);
+	// 			address.appendChild(p2);
+	// 			address.appendChild(p3);
+	// 			address.appendChild(p4);
+	//
+	// 			let company = document.createElement('div');
+	// 			company.classList.add('company');
+	//
+	// 			let p5 = document.createElement('p');
+	// 			let p6 = document.createElement('p');
+	// 			let p7 = document.createElement('p');
+	//
+	// 			p5.innerText = 'Name:' + user.company.name;
+	// 			p6.innerText = 'BS: ' +  user.company.bs;
+	// 			p7.innerText = 'CatchPhrase: '+ user.company.catchPhrase.replaceAll('-',' ');
+	//
+	// 			company.appendChild(p5);
+	// 			company.appendChild(p6);
+	// 			company.appendChild(p7);
+	//
+	// 			userDiv.appendChild(name);
+	// 			userDiv.appendChild(phone);
+	// 			userDiv.appendChild(username);
+	// 			userDiv.appendChild(email);
+	// 			userDiv.appendChild(website);
+	// 			userDiv.appendChild(address);
+	// 			userDiv.appendChild(company);
+	//
+	// 			usersBody.appendChild(userDiv);
+	// 		}
+	// 	});
+
+	// console.log('№ 5 - за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts.');
+	// console.log('№ 6 - За допомогою document.createElement вивести їх в браузер.');
+	// console.log('№ 7 - Помістити кожен окремий обєкт в блок при цьому кожен внутрішній обєкт(якщо він існує) в свій блок (блок в блоці).');
+	// let postBody = document.getElementById('posts');
+	// fetch('https://jsonplaceholder.typicode.com/posts')
+	// 	.then(response => response.json())
+	// 	.then(posts => {
+	// 		for (const post of posts) {
+	// 			let posts = document.createElement('div');
+	// 			posts.classList.add('post');
+	// 			let userId = document.createElement('p');
+	// 			let postId = document.createElement('p');
+	// 			let title = document.createElement('p');
+	// 			let body = document.createElement('p');
+	//
+	// 			userId.innerText = 'Author: ' + post.userId;
+	// 			postId.innerText = 'Post: ' + post.id;
+	// 			title.innerText = 'Post title: ' + post.title;
+	// 			body.innerText = 'Post body: ' + post.body;
+	//
+	// 			posts.appendChild(userId);
+	// 			posts.appendChild(postId);
+	// 			posts.appendChild(title);
+	// 			posts.appendChild(body);
+	//
+	// 			postBody.appendChild(posts);
+	// 		}
+	// 	});
+
+	// console.log('№ 8 -  за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments.');
+	// console.log('№ 9 - За допомогою document.createElement вивести їх в браузер.');
+	// console.log('№ 10 - Помістити кожен окремий обєкт в блок, при цьому кожен внутрішній обєкт(якщо він існує) в свій блок (блок в блоці).');
+	//
+	// let commentsBody = document.getElementById('comments');
+	// fetch('https://jsonplaceholder.typicode.com/comments')
+	// 	.then(response => response.json())
+	// 	.then(comments => {
+	// 		for (const comment of comments) {
+	// 			let comments = document.createElement('div');
+	// 			comments.classList.add('comment');
+	// 			let postId = document.createElement('p');
+	// 			let body = document.createElement('div');
+	// 			body.classList.add('commentBody')
+	// 			let email = document.createElement('p');
+	// 			let name = document.createElement('p');
+	// 			let id = document.createElement('p');
+	//
+	// 			postId.innerText = 'Post Id: ' + comment.postId;
+	// 			id.innerText = 'Id: ' + comment.id;
+	// 			name.innerText = 'Name: ' + comment.name;
+	// 			email.innerText = 'Email: ' + comment.email;
+	// 			body.innerText = 'Body: ' + comment.body;
+	//
+	// 			comments.appendChild(postId);
+	// 			comments.appendChild(id);
+	// 			comments.appendChild(name);
+	// 			comments.appendChild(email);
+	// 			comments.appendChild(body);
+	//
+	// 			commentsBody.appendChild(comments);
+	// 		}
+	// 	});
+
+	console.log('№ 11 - при помощи fetch (как в примере) получить от jsonplaceholder все posts.');
+	console.log('№ 12 - Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.');
+	console.log('№ 13 - Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.');
+	// 	Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту');
+
+	// let createTableButton = document.getElementById('createTableButton');
+	// createTableButton.addEventListener('click', function createTableFromInputs() {
+	// 	const table = document.createElement('table');
+	// 	table.setAttribute('class','table')
+	// 	let inputs = document.getElementsByTagName('input');
+	// 	let row = inputs[0].value;
+	// 	let column = inputs[1].value;
+	// 	let content = inputs[2].value;
+	//
+	// 	for (let i = 0; i < row; i++) {
+	// 		const tr = document.createElement('tr');
+	// 		for (let j = 0; j < column; j++) {
+	// 			const th = document.createElement('th');
+	// 			th.style.border = '5px solid red';
+	// 			let contents = document.createElement('p');
+	// 			contents.innerText = content;
+	// 			th.appendChild(contents);
+	// 			tr.appendChild(th);
+	// 		}
+	// 		table.appendChild(tr);
+	// 	}
+	//
+	// 	document.body.appendChild(table);
+	// });
+
+
+	// let postsBody = document.getElementById('posts');
+	// fetch('https://jsonplaceholder.typicode.com/posts')
+	// 	.then(response => response.json())
+	// 	.then(posts => {
+	//
+	// 		for (const post of posts) {
+	// 			post.comments = [];
+	// 			fetch('https://jsonplaceholder.typicode.com/comments')
+	// 				.then(value => value.json())
+	// 				.then(comments => {
+	// 					for (const comment of comments) {
+	// 						if (post.id === comment.postId){
+	// 							post.comments.push(comment)
+	// 						}
+	// 					}
+	//
+	// 					let bodyPostAndComments = document.createElement('div');
+	// 					bodyPostAndComments.classList.add('post');
+	// 					bodyPostAndComments.innerText = post.id + ' ' + post.title;
+	//
+	// 					let commentBody = document.createElement('ul');
+	// 					let sss = document.createElement('li');
+	//
+	// 					for (const comment of post.comments) {
+	// 						sss.innerText = comment.body;
+	// 					}
+	//
+	// 					commentBody.appendChild(sss);
+	//
+	// 					bodyPostAndComments.appendChild(commentBody);
+	// 					postsBody.appendChild(bodyPostAndComments);
+	//
+	// 				});
+	// 		}
+	// 	});
+
+
+</script>
+
+</body>
+</html>
